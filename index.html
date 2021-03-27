@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h2>JSON</h2>
+            <button type="button" onclick="getZainInfo()">Zain</button>
+            <button type="button" onclick="getAliInfo()">Ali</button>
+            <button type="button" onclick="getObadaInfo()">Obada</button>
+            <button type="button" onclick="getLilasInfo()">Lilas</button>
+
+            <div>
+                <h1 id="fullname"></h1>
+            </div> 
+        </div>
+        <script>
+            let response = [];
+            async function getZainInfo() {
+                const Zain = await fetch('http://localhost:3000/Zain')
+                .then(response => response.json());
+                let hold = document.getElementById("fullname");
+                hold.innerText = Zain[0].firstname + '  ' + Zain[0].lastname+'  ' +Zain[0].city+'  ' +Zain[0].age;
+                console.log(Zain[0]);
+            }
+            async function getAliInfo() {
+                const Ali = await fetch('http://localhost:3000/ALi')
+                .then(response => response.json());
+                let hold = document.getElementById("fullname");
+                hold.innerText = Ali[0].firstname + '  ' + Ali[0].lastname+'  ' +Ali[0].city+'  ' +Ali[0].age;
+                console.log(Ali[0]);
+            }
+            async function getObadaInfo() {
+                const Obada = await fetch('http://localhost:3000/Obada')
+                .then(response => response.json());
+                let hold = document.getElementById("fullname");
+                hold.innerText = Obada[0].firstname + '  ' + Obada[0].lastname+'  ' +Obada[0].city+'  ' +Obada[0].age;
+                console.log(Obada[0]);
+            }
+            async function getLilasInfo() {
+                const Lilas = await fetch('http://localhost:3000/Lilas')
+                .then(response => response.json());
+                let hold = document.getElementById("fullname");
+                hold.innerText = Lilas[0].firstname + '  ' + Lilas[0].lastname+'  ' +Lilas[0].city+'  ' +Lilas[0].age;
+                console.log(Lilas[0]);
+            }
+        </script>
+    </body>
+</html>

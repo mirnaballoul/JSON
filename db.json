@@ -1,0 +1,38 @@
+{
+  "Zain": [
+    {
+      "id": 1,
+      "firstname": "Zain",
+      "lastname": "fayod",
+      "city": "-latakia",
+      "age": -23
+    }
+  ],
+  "Ali": [
+    {
+      "id": 1,
+      "firstname": "Ali",
+      "lastname": "Attaf",
+      "city": "-latakia",
+      "age": -23
+    }
+  ],
+  "Lilas": [
+    {
+      "id": 1,
+      "firstname": "Lilas",
+      "lastname": "Merai",
+      "city": "-jableh",
+      "age": -23
+    }
+  ],
+  "Obada": [
+    {
+      "id": 1,
+      "firstname": "Obada",
+      "lastname": "jasm",
+      "city": "-latakia",
+      "age": -23
+    }
+  ]
+}
